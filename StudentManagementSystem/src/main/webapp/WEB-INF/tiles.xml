@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<!-- Base define  -->
+ <definition name="base.definition" 
+        template="/WEB-INF/layouts/classic.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />           
+        <put-attribute name="side" value="/WEB-INF/basefragments/_side.jsp" /> 
+        <put-attribute name="body" value="" /> 
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />  
+ </definition> 
+ 
+    
+ <!-- Welcome Page  -->
+    <definition name="welcome" extends="base.definition">  
+        <put-attribute name="title" value="Welcome" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_welcome.jsp" />  
+    </definition>
+ <!-- Login Page  -->
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_login.jsp" />  
+    </definition>
+ <!-- User Register Page  -->
+    <definition name="userRegister" extends="base.definition">  
+        <put-attribute name="title" value="User Register" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_userregister.jsp" />  
+    </definition>
+ <!-- User List Page  -->
+    <definition name="userList" extends="base.definition">  
+        <put-attribute name="title" value="User List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_userList.jsp" />  
+    </definition>   
+ <!-- Add Class Page  -->
+    <definition name="classes" extends="base.definition">  
+        <put-attribute name="title" value="Classes List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_classes.jsp" />  
+    </definition>
+ <!-- Class List Page  -->
+    <definition name="classesList" extends="base.definition">  
+        <put-attribute name="title" value="Class List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_classList.jsp" />  
+    </definition>
+ <!-- Add Subject Page  -->
+    <definition name="subject" extends="base.definition">  
+        <put-attribute name="title" value="Subject List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_subject.jsp" />  
+    </definition>
+ <!-- Class List Page  -->
+    <definition name="subjectList" extends="base.definition">  
+        <put-attribute name="title" value="Subject List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_subjectList.jsp" />  
+    </definition> 
+ <!-- Fee List Page  -->
+    <definition name="feeList" extends="base.definition">  
+        <put-attribute name="title" value="Fee List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_feeList.jsp" />  
+    </definition>   
+ <!-- Fee Page  -->
+    <definition name="fees" extends="base.definition">  
+        <put-attribute name="title" value="Fee" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_fees.jsp" />  
+    </definition> 
+ <!-- Attend List Page  -->
+    <definition name="attendenceList" extends="base.definition">  
+        <put-attribute name="title" value="Fee List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_attendenceList.jsp" />  
+    </definition>   
+ <!-- Attendence Page  -->
+    <definition name="attendence" extends="base.definition">  
+        <put-attribute name="title" value="Fee" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_attendence.jsp" />  
+    </definition>
+ <!-- Marks List Page  -->
+    <definition name="marksheetList" extends="base.definition">  
+        <put-attribute name="title" value="Marksheet List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_marksheetList.jsp" />  
+    </definition>   
+ <!-- Marksheet Page  -->
+    <definition name="marksheet" extends="base.definition">  
+        <put-attribute name="title" value="Marksheet" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_marksheet.jsp" />  
+    </definition>
+ <!-- Student Marksheet Page  -->
+    <definition name="studentMarksheetList" extends="base.definition">  
+        <put-attribute name="title" value="Student Marksheet" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_studentMarksheet.jsp" />  
+    </definition>  
+  <!-- Change Password  -->
+    <definition name="changePassword" extends="base.definition">  
+        <put-attribute name="title" value="Change Password" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_changePassword.jsp" />  
+    </definition>
+ <!-- My Profile  -->
+    <definition name="myProfile" extends="base.definition">  
+        <put-attribute name="title" value="My Profile" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_myProfile.jsp" />  
+    </definition> 
+  <!-- Forget Password  -->
+    <definition name="forgetPassword" extends="base.definition">  
+        <put-attribute name="title" value="Forget password" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_forgetPassword.jsp" />  
+    </definition>                
+                   
+    </tiles-definitions>
